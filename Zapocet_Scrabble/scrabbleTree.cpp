@@ -1,4 +1,4 @@
-#include "Definitions.h"
+#include "ScrabbleTree.h"
 
 
 ScrabbleTree::ScrabbleTree(void)
@@ -13,6 +13,30 @@ ScrabbleTree::~ScrabbleTree(void)
     deallocateNode(root);
 }
 
+
+Node *ScrabbleTree::newNode(Data d){
+    Node *newNode = new Node;
+    newNode->data = d;
+    newNode->endWord = false;
+    newNode->prefix = "";
+    newNode->parent = nullptr;
+    for(int i =0; i<alphabet_size; i++){
+        newNode->children[i] = nullptr;
+    }
+    return newNode;
+}
+
+void ScrabbleTree::deallocateNode(Node* node){
+    for(int i = 0; i<alphabet_size; i++){
+        if(node->children[i] != nullptr){
+            deallocateNode(node->children[i]);
+        }else{
+            continue;
+        }
+    }
+    node = NULL;
+    delete node;
+}
 
 
 void ScrabbleTree::readTheDataFromFileAndPutIntoTree(string &dataFileName){
@@ -165,6 +189,21 @@ void ScrabbleTree::runDeserialization(string &linksFileName, string &dataFileNam
             }
         }
     }
+}
+
+
+string ScrabbleTree::subtractStrings(string &userInput, string& sub){
+    if(sub == ""){
+        return userInput;
+    }
+    int pos;
+    for(int i =0; i<sub.size(); i++){
+        pos = userInput.find(sub[i]);
+        if(pos >0){
+        userInput.erase(userInput.begin() + pos);
+        }
+    }
+    return userInput;
 }
 
 

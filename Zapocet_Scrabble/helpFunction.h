@@ -5,8 +5,8 @@
 //  Created by Paul Ekishev on 06/08/2021.
 //
 #pragma once
-#ifndef helpFunctionDifinitions_h
-#define helpFunctionDifinitions_h
+#ifndef helpFunction_h
+#define helpFunction_h
 #include <iostream>
 #include <cstring>
 #include <string>
@@ -22,4 +22,4 @@ char asciiToLower(char &letter);
 string makeStringAlphabeticalAndLowerCase(string &s);
 
 
-#endif /* helpFunctionDifinitions_h */
+#endif /* helpFunction_h */

@@ -5,7 +5,6 @@
 //  Created by Paul Ekishev on 25/05/2021.
 //
 
-#include "ScrabbleTree.h"
 #include "Scrabble.h"
 
 

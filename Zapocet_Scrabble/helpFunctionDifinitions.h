@@ -7,7 +7,10 @@
 #pragma once
 #ifndef helpFunctionDifinitions_h
 #define helpFunctionDifinitions_h
-#include "ScrabbleTree.h"
+#include <iostream>
+#include <cstring>
+#include <string>
+using namespace std;
 
 
 

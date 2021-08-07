@@ -8,29 +8,26 @@
 #ifndef Scrabble_h
 #define Scrabble_h
 
+
+#include "helpFunctionDifinitions.h"
 #include "ScrabbleTree.h"
+
+
+extern string messageForUserAskingWhereDictionaryIsStored;
+extern string messageForUserAskingTenLetters;
+extern string messageForUserAskingWhereLinksSaveTo;
+extern string messageForUserAskingWhereDataSaveTo;
 
 
 
 class Scrabble {
 private:
-    ScrabbleTree *tree;
     string promtUserToEnterFileName(string &messageForUser, int index);
     string promtUserForEnterTenLetters(string &userMessage);
     
 public:
     void startGame();
 };
-
-
-
-
-
-
-
-
-
-
 
 
 #endif /* Scrabble_h */

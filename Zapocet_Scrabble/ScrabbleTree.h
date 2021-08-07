@@ -1,6 +1,6 @@
 #ifndef ScrabbleTree_h
 #define ScrabbleTree_h
-#include "helpFunctionDifinitions.h"
+#include "helpFunction.h"
 #include <sstream>
 #include <fstream>
 #include <cstdio>

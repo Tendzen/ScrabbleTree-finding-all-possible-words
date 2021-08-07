@@ -120,7 +120,7 @@ void ScrabbleTree::runDeserialization(string &linksFileName, string &dataFileNam
     fileWithData.open(dataFileName);
     string delimetr = " ";
     if(fileWithData.is_open()){
-        int posOfDelimetr, previousPos, indexInt, endWordInt;
+        int posOfDelimetr, previousPos, indexInt = 0, endWordInt = 0;
         string line, index, endWord, letter;
         while(!fileWithData.eof()){
             previousPos = 0;

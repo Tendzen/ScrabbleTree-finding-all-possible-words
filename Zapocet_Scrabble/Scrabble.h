@@ -9,7 +9,7 @@
 #define Scrabble_h
 
 
-#include "helpFunctionDifinitions.h"
+#include "helpFunction.h"
 #include "ScrabbleTree.h"
 
 

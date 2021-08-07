@@ -31,7 +31,7 @@
 		E957E1002665561700DAC3ED /* helpFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = helpFunction.cpp; sourceTree = "<group>"; };
 		E9A7214D26BD69500015CD48 /* Scrabble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scrabble.h; sourceTree = "<group>"; };
 		E9A7214E26BD69640015CD48 /* Scrabble.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scrabble.cpp; sourceTree = "<group>"; };
-		E9A7215426BD6EA30015CD48 /* helpFunctionDifinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helpFunctionDifinitions.h; sourceTree = "<group>"; };
+		E9A7215426BD6EA30015CD48 /* helpFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helpFunction.h; sourceTree = "<group>"; };
 		E9D07303265E839E0083ACF1 /* ScrabbleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrabbleTree.h; sourceTree = "<group>"; };
 		E9D07305265E839E0083ACF1 /* ScrabbleTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrabbleTree.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,7 @@
 			children = (
 				E9169BCC265D066100684889 /* main.cpp */,
 				E957E1002665561700DAC3ED /* helpFunction.cpp */,
-				E9A7215426BD6EA30015CD48 /* helpFunctionDifinitions.h */,
+				E9A7215426BD6EA30015CD48 /* helpFunction.h */,
 				E9D07305265E839E0083ACF1 /* ScrabbleTree.cpp */,
 				E9D07303265E839E0083ACF1 /* ScrabbleTree.h */,
 				E9A7214D26BD69500015CD48 /* Scrabble.h */,

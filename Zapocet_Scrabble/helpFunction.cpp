@@ -5,7 +5,7 @@
 //  Created by Paul Ekishev on 31/05/2021.
 //
 
-#include "helpFunctionDifinitions.h"
+#include "helpFunction.h"
 
 
 void cinIgnore() {

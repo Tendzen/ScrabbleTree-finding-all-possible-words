@@ -15,6 +15,14 @@ string messageForUserAskingWhereDataSaveTo = "Enter the file name to witch you w
 string messageForUserAskingTenLetters = "Enter any 10 letters you want: ";
 
 
+
+void Scrabble::cinIgnore() {
+    cin.clear();
+    cin.ignore(433443, '\n');
+    cout << "Error, please enter again" << endl;
+}
+
+
 string Scrabble::promtUserForEnterTenLetters(string &userMessage){
     string tenLetters;
     while(true){

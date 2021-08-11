@@ -14,6 +14,7 @@ int main() {
     
     Scrabble *scrabble = new Scrabble;
     scrabble->startGame();
+    delete scrabble;
     return 0;
 }
 

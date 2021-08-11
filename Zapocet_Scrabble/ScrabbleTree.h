@@ -1,14 +1,17 @@
 #ifndef ScrabbleTree_h
 #define ScrabbleTree_h
-#include "helpFunction.h"
 #include <sstream>
 #include <fstream>
 #include <cstdio>
 #include <vector>
+#include <cstring>
 #include <stack>
 #include <map>
 #include <queue>
 #include <unordered_map>
+#include <iostream>
+
+using namespace std;
 
 
 typedef char Data;
@@ -43,5 +46,8 @@ public:
 };
 
 
+char asciiToLower(char &letter);
+
+string makeStringAlphabeticalAndLowerCase(string &s);
 
 #endif /* ScrabbleTree_h */

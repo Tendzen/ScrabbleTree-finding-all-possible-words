@@ -9,7 +9,6 @@
 #define Scrabble_h
 
 
-#include "helpFunction.h"
 #include "ScrabbleTree.h"
 
 
@@ -22,6 +21,7 @@ extern string messageForUserAskingWhereDataSaveTo;
 
 class Scrabble {
 private:
+    void cinIgnore();
     string promtUserToEnterFileName(string &messageForUser, int index);
     string promtUserForEnterTenLetters(string &userMessage);
     

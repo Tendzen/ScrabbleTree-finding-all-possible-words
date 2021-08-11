@@ -14,6 +14,33 @@ ScrabbleTree::~ScrabbleTree(void)
 }
 
 
+
+char asciiToLower(char &symbol){
+    if (symbol <= 'Z' && symbol >= 'A'){
+        symbol += 32;
+        return symbol;
+    }
+    return symbol;
+}
+
+
+
+string makeStringAlphabeticalAndLowerCase(string &s){
+    int stringSize = s.size();
+    int i;
+    for(i = 0; i<stringSize; i++){
+        asciiToLower(s[i]);
+        if(s[i] < 96 || s[i] >123){
+            s.erase(s.begin() + i);
+            stringSize = s.size();
+            i--;
+        }
+    }
+    return s;
+}
+
+
+
 Node *ScrabbleTree::newNode(Data d){
     Node *newNode = new Node;
     newNode->data = d;
